@@ -55,3 +55,5 @@ opt.autoread = true
 
 -- 光标到顶部和底部时保持 5 行距离
 opt.scrolloff = 5
+
+vim.cmd([[au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif]])
