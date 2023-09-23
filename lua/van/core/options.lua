@@ -1,4 +1,5 @@
 local opt = vim.opt
+local g = vim.g
 
 -- line numbers
 opt.relativenumber = true
@@ -56,4 +57,8 @@ opt.autoread = true
 -- 光标到顶部和底部时保持 5 行距离
 opt.scrolloff = 5
 
+-- 下一次打开文件时恢复光标位置
 vim.cmd([[au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif]])
+
+-- 关闭 perl 支持
+g.loaded_perl_provider = 0
