@@ -62,3 +62,6 @@ vim.cmd([[au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe 
 
 -- 关闭 perl 支持
 g.loaded_perl_provider = 0
+
+-- 设置 python 路径
+g.python3_host_prog = "/usr/local/bin/python3"
