@@ -5,6 +5,10 @@ local g = vim.g
 opt.relativenumber = true
 opt.number = true
 
+-- 显示隐藏字符并修改 tab 和 trail 的显示
+vim.opt.list = true
+vim.opt.listchars = "tab:|\\ ,trail:▫"
+
 -- tabs & indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
