@@ -9,6 +9,6 @@ return {
 		local keymap = vim.keymap
 		keymap.set("n", "<leader>sr", sniprun.run, {})
 		keymap.set("n", "<leader>sc", display.close_all, {})
-		keymap.set("v", "<leader>sv", ":'<,'>SnipRun<CR>")
+		keymap.set("v", "<leader>sr", ":'<,'>SnipRun<CR>")
 	end,
 }
