@@ -30,6 +30,7 @@ keymap.set("n", "fh", "<C-w>h")
 keymap.set("n", "fl", "<C-w>l")
 keymap.set("n", "fj", "<C-w>j")
 keymap.set("n", "fk", "<C-w>k")
+keymap.set("n", "<leader>d", ":vert diffs ")
 
 -- tab 操作
 keymap.set("n", "ta", ":tabe<CR>")
@@ -58,8 +59,8 @@ keymap.set("i", "<C-e>", "<ESC>$a")
 keymap.set("i", "<C-a>", "<ESC>0i")
 keymap.set("i", "<C-f>", "<ESC>la")
 keymap.set("i", "<C-b>", "<ESC>ha")
-keymap.set("i", "<C-p>", "<ESC>ka")
-keymap.set("i", "<C-n>", "<ESC>ja")
+-- keymap.set("i", "<C-p>", "<ESC>ki")
+-- keymap.set("i", "<C-n>", "<ESC>ji")
 
 -- 搜索 visual 模式下选中的字符串
 keymap.set("v", "//", 'y/<C-r>"<CR>')
